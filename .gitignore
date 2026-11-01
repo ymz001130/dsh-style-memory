@@ -1,0 +1,12 @@
+# 本地校准与验收产物（不进插件包）
+.calibration-home/
+blind-*/
+node_modules/
+calibration-report*.json
+*.log
+blind-*.md
+current-card.txt
+blind-ai-injected*.md
+human-lecture-prose.md
+human-case-notes.md
+human-chat-corpus.md

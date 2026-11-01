@@ -1,0 +1,62 @@
+{
+  "name": "dsh-style-memory",
+  "version": "0.6.2",
+  "description": "DeepSeek Harness 风格记忆插件：从你对 AI 文本的修改中自动学习你的说话与写作方式，识别 AI 生成特征，让后续会话自动用更像你的方式输出，并随每次修订进化。",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon.svg": "./icon.svg",
+    "./client": "./client.js"
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "scripts/",
+    "test/",
+    "test-support/",
+    "cordis.patch.yml",
+    "README.md",
+    "METHODOLOGY.md",
+    "CHANGELOG.md",
+    "install.ps1",
+    "uninstall.ps1",
+    "update.ps1",
+    "icon.svg",
+    "locale/*.json",
+    "LICENSE",
+    "client.js"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "id": "dsh-style-memory",
+    "name": "风格记忆",
+    "version": "0.6.2",
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc <0.3.0-0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymz001130/dsh-style-memory.git"
+  },
+  "homepage": "https://github.com/ymz001130/dsh-style-memory",
+  "bugs": {
+    "url": "https://github.com/ymz001130/dsh-style-memory/issues"
+  },
+  "scripts": {
+    "test": "node --test",
+    "calibrate": "node scripts/calibrate.mjs",
+    "blindtest": "node scripts/blind_eval.mjs"
+  },
+  "icon": "./icon.svg"
+}
